@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto/Roboto-Regular.ttf);
+}
+
+/* General ---------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1, footer{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Header section -------------------------------------------------------*/
+nav {
+    text-align: center;
+}
+
+nav a{
+    display: inline-block;
+    padding: 20px 40px;
+    color: white;
+}
+
+header{
+    background-color:#1c1f26;
+    padding: 1px;
+    color: white;
+}
+
+/* First section ---------------------------------------------------- */
+.first-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1c1f26; 
+    color: white;
+    padding: 40px 20px;
+}
+
+.first-section .text-content {
+    max-width: 50%;
+}
+
+.first-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.first-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-block: 20px;
+    text-align: left;
+}
+
+.first-section img {
+    width: 400px; 
+    height: 250px; 
+    display: flex;
+    align-items: center;
+}
+
+.first-section input[type="button"] {
+    padding: 12px 24px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Second section -------------------------------------------------------- */
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.image-text img {
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.image-text p {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.image-text.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.image-box {
+    width: 300px;         
+    height: 200px;         
+    border: 5px solid blue;
+    margin-right: 20px;   
+    border-radius: 30px; 
+}
+
+.image-text.reverse .image-box {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* Third section ---------------------------------------------------*/
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 225, 225); 
+    color: white;
+    padding: 40px 20px;
+}
+
+.third-section p{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    max-width: 60%;
+    text-shadow: 1px 1px 4px rgb(58, 58, 58);
+    font-size: 25px;
+    font-style: italic;
+}
+
+.third-section footer{
+    color: black;
+    text-align: right;
+    max-width: 60%;
+    align-self: flex-end;
+    padding-right: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Forth section-----------------------------------------------------*/
+
+.fourth-section {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff; 
+    color: white;  
+    border-radius: 20px; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.fourth-section .text-content{
+    padding-right: 50px;
+}
+
+.fourth-section input[type="button"] {
+    padding: 12px 24px;
+    background-color: #007bff;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* footer --------------------------------------------*/
+
+.lastfooter footer{
+    background-color:#1c1f26;
+    padding: 10px;
+    color: white;
+}
+
+/* Page 2 dynamic content loading ---------------------------*/
+
+.post {
+    border: 1px solid #493737;
+    padding: 100px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    width: 30%; 
+    box-sizing: border-box;
+    border-width: 10px;
+    border-radius: 10%;
+}
+
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Page 3 Real-time Data Display-----------------------------------*/
+
+.weather-section h1{
+    text-align: center;
+    font-weight: bold;
+}
+.weather{
+    border: 1px solid black;
+}
